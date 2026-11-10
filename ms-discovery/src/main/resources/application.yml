@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: "ms-discovery"
+server:
+  port: 8761
+# don't register me in discovery and don't fetch me in register server
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
